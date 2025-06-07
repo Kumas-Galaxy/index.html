@@ -1,1 +1,152 @@
+<!-- index.html (Landing Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kumas Digital Galaxy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Kumas Digital Galaxy</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="thank-you.html">Thank You</a></li>
+          <li><a href="#freebie">Get Freebie</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <section class="hero">
+    <div class="container">
+      <h2>Transform Your Digital Experience</h2>
+      <p>Get exclusive access to our premium tools for free</p>
+      <a href="#freebie" class="btn">Download Now</a>
+    </div>
+  </section>
+
+  <section id="freebie" class="freebie-form">
+    <div class="container">
+      <h3>Get Your Free Resource</h3>
+      <form name="freebieForm" method="POST" data-netlify="true" action="thank-you.html">
+        <input type="hidden" name="form-name" value="freebieForm" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <button type="submit">Claim Freebie</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Kumas Digital Galaxy. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Kumas Digital Galaxy</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form name="contactForm" method="POST" data-netlify="true" action="thank-you.html">
+        <input type="hidden" name="form-name" value="contactForm" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Kumas Digital Galaxy. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+<!-- thank-you.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Kumas Digital Galaxy</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="thank-you">
+    <div class="container">
+      <h2>Thank You for Connecting!</h2>
+      <p>Check your inbox or download your resource below.</p>
+      <a href="/assets/Kumas-Freebie.pdf" class="btn">Download Freebie</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Kumas Digital Galaxy. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+/* style.css (you can link this same file across all pages) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.navbar {
+  background: #1a1a1a;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items
